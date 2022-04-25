@@ -22,46 +22,44 @@
         <section class="main-section">
             <img class="main-logo" src="./assets/alchemy-logo.png" />
             <h2>
-                Welcome to Alchemy Bootstrap!
+                Welcome to the Shell Guessing Game! 
+                
             </h2>
-
+<h3>
+    By: Aaron Princely Enyetu
+</h3>
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
+                
+                The game begins with 3 shells, one of which is concealing a ball. A random generator mixes the shells so that the 
+                user does not know where the ball is. User's should see three shells and three buttons and need to guess where the ball is "hidden".
+                When the user clicks on one of the buttons, the ball's location is revealed. 
+                The user should also track the total number of wins, losses, and total games played are displayed.
             </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
+            
+            <div class="shells">
+                <div class="shell" id="shell-1">
+                    <img src="./assets/shell2.png" id="shell-1-img" />
+                    <div class="ball"></div>
+                    <button id="shell-1-button">Guess</button>
+                </div>
+                <div class="shell" id="shell-2">
+                    <img src="./assets/shell2.png" id="shell-2-img" />
+                    <div class="ball"></div>
+                    <button id="shell-2-button">Guess</button>
+                </div>
+                <div class="shell" id="shell-3">
+                    <img src="./assets/shell2.png" id="shell-3-img" />
+                    <div class="ball"></div>
+                    <button id="shell-3-button">Guess</button>
+                </div>
+            </div>
 
-        </section>
+            <div class="results">
+                <div>Wins: <span id="wins">0</span></div>
+                <div>Losses: <span id="losses">0</span></div>
+                <div>Total: <span id="total">0</span></div>
+            </div>
+            </section>
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
