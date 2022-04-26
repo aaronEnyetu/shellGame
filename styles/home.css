@@ -17,3 +17,16 @@
     width:100%;
     z-index: 20;
 }
+.shell.reveal img {
+    transform: translateY(-60px);
+}
+.ball {
+    z-index: 10;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 120px;
+    background-color: blue;
+    border-radius: 50%;
+    box-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
+}
